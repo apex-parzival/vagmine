@@ -1,0 +1,165 @@
+/*
+ * Iconsmind Override CSS
+ * Replaces missing iconsmind font icons with inline SVG data URIs.
+ * This file should be loaded AFTER iconsmind.min.css to override the broken font references.
+ */
+
+/* Base reset: prevent the broken font from trying to render */
+[class*="iconsmind-"]::before {
+  font-family: inherit !important;
+  content: "" !important;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+/* ===== COMMON ICONS (used across all pages) ===== */
+
+/* Phone / Telephone */
+.iconsmind-Telephone::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z'/%3E%3C/svg%3E") !important;
+}
+
+/* Mail / Email */
+.iconsmind-Mail::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'/%3E%3Cpolyline points='22,6 12,13 2,6'/%3E%3C/svg%3E") !important;
+}
+
+/* ===== SERVICES PAGE ICONS ===== */
+
+/* Laptop Secure - Refresh PC */
+.iconsmind-Laptop-Secure::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='3' width='20' height='14' rx='2' ry='2'/%3E%3Cline x1='2' y1='20' x2='22' y2='20'/%3E%3Cpath d='M12 7v4l2 2'/%3E%3C/svg%3E") !important;
+}
+
+/* RAM - Hardware Installation */
+.iconsmind-Ram::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='6' width='20' height='12' rx='2'/%3E%3Cline x1='6' y1='18' x2='6' y2='21'/%3E%3Cline x1='10' y1='18' x2='10' y2='21'/%3E%3Cline x1='14' y1='18' x2='14' y2='21'/%3E%3Cline x1='18' y1='18' x2='18' y2='21'/%3E%3Cline x1='6' y1='6' x2='6' y2='3'/%3E%3Cline x1='10' y1='6' x2='10' y2='3'/%3E%3Cline x1='14' y1='6' x2='14' y2='3'/%3E%3Cline x1='18' y1='6' x2='18' y2='3'/%3E%3C/svg%3E") !important;
+}
+
+/* Warning Window - Diagnostics */
+.iconsmind-Warning-Window::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='3' width='20' height='14' rx='2' ry='2'/%3E%3Cline x1='2' y1='20' x2='22' y2='20'/%3E%3Cline x1='12' y1='7' x2='12' y2='11'/%3E%3Cline x1='12' y1='13' x2='12.01' y2='13'/%3E%3C/svg%3E") !important;
+}
+
+/* Virus - Virus Removal */
+.iconsmind-Virus-3::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='6'/%3E%3Cline x1='12' y1='2' x2='12' y2='6'/%3E%3Cline x1='12' y1='18' x2='12' y2='22'/%3E%3Cline x1='4.93' y1='4.93' x2='7.76' y2='7.76'/%3E%3Cline x1='16.24' y1='16.24' x2='19.07' y2='19.07'/%3E%3Cline x1='2' y1='12' x2='6' y2='12'/%3E%3Cline x1='18' y1='12' x2='22' y2='12'/%3E%3Cline x1='4.93' y1='19.07' x2='7.76' y2='16.24'/%3E%3Cline x1='16.24' y1='7.76' x2='19.07' y2='4.93'/%3E%3C/svg%3E") !important;
+}
+
+/* Calendar - 7 Days a Week / 10+ Years */
+.iconsmind-Calendar-4::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'/%3E%3Cline x1='16' y1='2' x2='16' y2='6'/%3E%3Cline x1='8' y1='2' x2='8' y2='6'/%3E%3Cline x1='3' y1='10' x2='21' y2='10'/%3E%3C/svg%3E") !important;
+}
+
+/* Repair / Wrench - 3-5 Days / Repairs */
+.iconsmind-Repair::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'/%3E%3C/svg%3E") !important;
+}
+
+/* Computer - Computer/Laptop Sales */
+.iconsmind-Computer::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='3' width='20' height='14' rx='2' ry='2'/%3E%3Cline x1='8' y1='21' x2='16' y2='21'/%3E%3Cline x1='12' y1='17' x2='12' y2='21'/%3E%3C/svg%3E") !important;
+}
+
+/* Data Backup - Data Recovery */
+.iconsmind-Data-Backup::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cellipse cx='12' cy='5' rx='9' ry='3'/%3E%3Cpath d='M21 12c0 1.66-4 3-9 3s-9-1.34-9-3'/%3E%3Cpath d='M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5'/%3E%3Cpath d='M14 13l2-2-2-2'/%3E%3Cpath d='M10 11l-2 2 2 2'/%3E%3C/svg%3E") !important;
+}
+
+/* Repeat/Cycle - Computer Service & Maintenance */
+.iconsmind-Repeat-5::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='17 1 21 5 17 9'/%3E%3Cpath d='M3 11V9a4 4 0 0 1 4-4h14'/%3E%3Cpolyline points='7 23 3 19 7 15'/%3E%3Cpath d='M21 13v2a4 4 0 0 1-4 4H3'/%3E%3C/svg%3E") !important;
+}
+
+/* Server - Servers/Storages */
+.iconsmind-Server::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='2' width='20' height='8' rx='2' ry='2'/%3E%3Crect x='2' y='14' width='20' height='8' rx='2' ry='2'/%3E%3Cline x1='6' y1='6' x2='6.01' y2='6'/%3E%3Cline x1='6' y1='18' x2='6.01' y2='18'/%3E%3C/svg%3E") !important;
+}
+
+/* Network Window - Networks/Printers/Accessories */
+.iconsmind-Network-Window::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='1' y='1' width='22' height='16' rx='2'/%3E%3Cline x1='12' y1='17' x2='12' y2='21'/%3E%3Cline x1='5' y1='21' x2='19' y2='21'/%3E%3Ccircle cx='12' cy='9' r='2'/%3E%3Cpath d='M8.5 6.5a5 5 0 0 1 7 0'/%3E%3C/svg%3E") !important;
+}
+
+/* ===== WHY US PAGE ICONS ===== */
+
+/* Idea / Lightbulb - Comprehensive Services */
+.iconsmind-Idea::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18h6'/%3E%3Cpath d='M10 22h4'/%3E%3Cpath d='M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z'/%3E%3C/svg%3E") !important;
+}
+
+/* Smile - Customer Satisfaction */
+.iconsmind-Smile::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M8 14s1.5 2 4 2 4-2 4-2'/%3E%3Cline x1='9' y1='9' x2='9.01' y2='9'/%3E%3Cline x1='15' y1='9' x2='15.01' y2='9'/%3E%3C/svg%3E") !important;
+}
+
+/* Building - State-of-the-Art Facility */
+.iconsmind-Building::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='2' width='16' height='20' rx='1'/%3E%3Cline x1='9' y1='22' x2='9' y2='18'/%3E%3Cline x1='15' y1='22' x2='15' y2='18'/%3E%3Crect x='8' y='6' width='3' height='3'/%3E%3Crect x='13' y='6' width='3' height='3'/%3E%3Crect x='8' y='12' width='3' height='3'/%3E%3Crect x='13' y='12' width='3' height='3'/%3E%3C/svg%3E") !important;
+}
+
+/* Dollar Sign - Cost-Effective Solutions */
+.iconsmind-Dollar-Sign::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='12' y1='1' x2='12' y2='23'/%3E%3Cpath d='M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6'/%3E%3C/svg%3E") !important;
+}
+
+/* ===== SECTORS PAGE ICONS ===== */
+
+/* Business Man/Woman - Individuals & Students */
+.iconsmind-Business-ManWoman::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M23 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E") !important;
+}
+
+/* Security Camera - Retail IT Solutions */
+.iconsmind-Security-Camera::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12l5-5 5 5'/%3E%3Cpath d='M7 7v10'/%3E%3Crect x='12' y='5' width='8' height='8' rx='1'/%3E%3Cpath d='M22 8l-2-2'/%3E%3Cline x1='16' y1='13' x2='16' y2='20'/%3E%3Cline x1='12' y1='20' x2='20' y2='20'/%3E%3C/svg%3E") !important;
+}
+
+/* University / Education - Educational Institutions */
+.iconsmind-University::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 10v6M2 10l10-5 10 5-10 5z'/%3E%3Cpath d='M6 12v5c0 2 3 3 6 3s6-1 6-3v-5'/%3E%3C/svg%3E") !important;
+}
+
+/* Bank - Banking & Government */
+.iconsmind-Bank::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M3 7l9-4 9 4'/%3E%3Cpath d='M5 7v10'/%3E%3Cpath d='M9 7v10'/%3E%3Cpath d='M15 7v10'/%3E%3Cpath d='M19 7v10'/%3E%3Cpath d='M3 17h18'/%3E%3C/svg%3E") !important;
+}
+
+/* ===== ABOUT PAGE ICONS ===== */
+
+/* People on Cloud - 30+ Team Members */
+.iconsmind-People-onCloud::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z'/%3E%3Ccircle cx='12' cy='13' r='2'/%3E%3Cpath d='M15 17a3 3 0 0 0-6 0'/%3E%3C/svg%3E") !important;
+}
+
+/* Computer 2 - 30,000+ PC Builds */
+.iconsmind-Computer-2::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='3' width='20' height='14' rx='2' ry='2'/%3E%3Cline x1='8' y1='21' x2='16' y2='21'/%3E%3Cline x1='12' y1='17' x2='12' y2='21'/%3E%3Cline x1='7' y1='10' x2='12' y2='7'/%3E%3Cline x1='12' y1='7' x2='17' y2='10'/%3E%3C/svg%3E") !important;
+}
+
+/* Thumbs Up Smiley - 1,45,000+ Customers */
+.iconsmind-Thumbs-UpSmiley::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3'/%3E%3C/svg%3E") !important;
+}
+
+/* Map 2 - 1 Store */
+.iconsmind-Map2::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6'/%3E%3Cline x1='8' y1='2' x2='8' y2='18'/%3E%3Cline x1='16' y1='6' x2='16' y2='22'/%3E%3C/svg%3E") !important;
+}
+
+/* Life Safer / Lifesaver - Lifetime Partner */
+.iconsmind-Life-Safer::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cline x1='4.93' y1='4.93' x2='9.17' y2='9.17'/%3E%3Cline x1='14.83' y1='14.83' x2='19.07' y2='19.07'/%3E%3Cline x1='14.83' y1='9.17' x2='19.07' y2='4.93'/%3E%3Cline x1='4.93' y1='19.07' x2='9.17' y2='14.83'/%3E%3C/svg%3E") !important;
+}
+
+/* ===== CONTACT PAGE ICONS ===== */
+
+/* Map Marker 2 - Address */
+.iconsmind-Map-Marker2::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") !important;
+}
