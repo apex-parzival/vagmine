@@ -4,6 +4,18 @@
  * This file should be loaded AFTER iconsmind.min.css to override the broken font references.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+/* Apply font everywhere */
+body, h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, select, textarea, div {
+    font-family: 'Google Sans', sans-serif !important;
+}
+
+/* Explicitly preserve FontAwesome for elements that still use it */
+.fa, .fas, .far, .fab, [class^="fa-"], [class*=" fa-"] {
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+}
+
 /* Base reset: prevent the broken font from trying to render */
 [class*="iconsmind-"]::before {
   font-family: inherit !important;
