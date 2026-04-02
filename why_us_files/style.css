@@ -6026,7 +6026,7 @@ border-top: 0;
     z-index: 10;
 }
 
-.modal-content-inner::after {
+.modal-content-inner::after { pointer-events: none;
    display: block;
    content: '';
    position: absolute;
